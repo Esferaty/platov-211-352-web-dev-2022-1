@@ -1,0 +1,51 @@
+.digits, .other {
+    display: grid;
+    background-color: lightcyan;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.other {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.screen {
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    height: 70px;
+    width: auto;
+    line-height: 70px;
+    font-size: 25px;
+}
+.calc-container {
+    align-content: center;
+    justify-content: center;
+    margin: 10vh auto 0 auto;
+}
+.digits *, .other * {
+    border: 0.5px solid #999;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 50%;
+    margin: 0.5rem 5px 0.5rem 5px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.digits *:hover, .other *:hover {
+    background-color: rgb(209, 243, 231);
+    transition: 0.1s;
+}
+.digits * {
+    border: 0.5px solid #999;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 50%;
+    margin: 0.5rem 5px 0.5rem 5px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.result {
+    background-color: darkgray;
+}

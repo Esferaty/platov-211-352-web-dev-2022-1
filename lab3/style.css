@@ -1,0 +1,302 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: "Courier";
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    background-color:white;
+    
+}
+
+body::after {
+    content: "";
+    display: block;
+    height: 80px;
+}
+
+.header {
+    background-color: black;
+    padding: 1rem 0;
+    border-bottom: 10px solid lightgray;
+    position: sticky;
+    top: 0;
+}
+
+.footer {
+    background-color: black;
+    padding: 0.75rem 0;
+    border-top: 10px solid lightgray;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.main-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.main-menu ul li{
+    display: inline;
+    margin-right: 0.625rem;
+}
+.main-menu ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.main-menu ul li:last-child {
+    margin-right: 0;
+}
+
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+}
+.container-centered{
+    max-width: 95%;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.profile a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.sidebar {
+    padding: 1rem 0;
+    width: 15rem;
+    flex-shrink: 0;
+}
+
+.page-content {
+    padding: 1rem;
+}
+
+.objects {
+    margin-top: 0;
+}
+
+.event {
+    display: flex;
+    height: auto;
+    width: 31rem;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    
+    background-color: white;
+}
+
+.object-image {
+    height: 100%;
+    flex-basis: 50%;
+}
+
+.object-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.object-image-rounded img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 5px;
+}
+ul {
+    margin: 5px;
+}
+.object-details {
+    height: 100%;
+    flex-basis: 50%;
+    padding: 1rem;
+}
+
+.object-details header {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.object-details .information {
+    text-align: justify;
+    font-size: 1.125rem;
+    height: 50%;
+    overflow: auto;
+}
+
+.object-details .control {
+    text-align: center;
+}
+
+.object-details .btn {
+    font-size: 1rem;
+    color:black;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+.object-details .btn span {
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+}
+
+.object-details .btn .price {
+    background-color: rgb(165, 165, 165);
+}
+
+.object-details .btn .artic {
+    background-color: darkgrey;
+    font-weight: bold;
+}
+
+.sidebar-section {
+    
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.25rem;
+}
+
+.sidebar-section legend {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.d-flex {
+    display: flex;
+}
+.main-menu {
+    flex-grow: 1;
+}
+
+.objects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+}
+
+.objects-list1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.mail {
+    font-size: 1rem;
+    color:black;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgray;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+    text-decoration: none;
+}
+
+.page-content1 {
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.event1 {
+    display: flex;
+    height: 30rem;
+    width: 40rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+.auth-form {
+    display: block;
+    text-align: center;
+}
+
+.days {
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.fac_style {
+    text-align: left;
+}
+
+.agree {
+    margin: 20px;
+}
+
+@media all and (max-width: 780px) {
+    .main-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .direction-column {
+        flex-direction: column;
+    }
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .objects-list {
+        justify-content: center;
+    }
+    .objects {
+        text-align: center;
+    }
+    main {
+        align-items: center;
+    }
+    .event {
+        flex-direction: column;
+        width: 95%;
+        max-width: 350px;
+        height: auto;
+    }
+    .object-details .information {
+        height: auto;
+    }
+    .header {
+        position: static;
+    }
+    .event1 {
+        flex-direction: column;
+        width: 95%;
+        max-width: 350px;
+        height: auto;
+
+    }
+    .days {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+}

@@ -1,0 +1,22 @@
+
+.header-name {
+  color: aliceblue;
+  text-align: center;
+}
+
+.project-bg {
+  color: aliceblue;
+  background-image: url("img/bg_clockwork.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0!important;
+}
+
+.footer {
+  background-color: rgb(51, 51, 51);
+  color: aliceblue;
+}
+.bg-lightgray
+{
+  background-color: lightgrey;
+}

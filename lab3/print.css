@@ -1,0 +1,17 @@
+.sidebar, .scroll-to-top-btn, .header {
+    display: none;
+}
+.objects-list {
+    justify-content: center;
+}
+.objects {
+    text-align: center;
+}
+.control .btn {
+    border: 1px solid black;
+    color: black;
+}
+
+footer {
+    display: none;
+}

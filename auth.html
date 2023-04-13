@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" media="print">
+    <title>SCP Foundation</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container d-flex direction-column">
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Main menu</a></li>
+                    <li><a href="auth.html">Authorization</a></li>
+                </ul>
+            </nav>
+            <div class="profile">
+                <a href="">Login</a>
+            </div>
+        </div>
+    </header>
+    <main class="auth-form">
+        <h1>Authorization</h1>
+        <form action="http://httpbin.org/post" enctype="multipart/form-data" method="post" class="form_facility">
+            <div>
+                <label for="fio">First and last name:</label>
+                <input type="text" name="fio" id="fio" placeholder="First and last name" required>
+            </div>
+            <div>
+                <label for="password">A8F entry code:</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+
+            <fieldset class="days">
+                <legend>Select your facility:</legend>
+                <div class="fac_style">
+                    <input type="radio" name="facility_id" value="id1" id="id1" required>
+                    <label for="id1">Aegis-6</label>
+                </div>
+                <div class="fac_style">
+                    <input type="radio" name="facility_id" value="id2" id="id2" required>
+                    <label for="id2">Opera-15</label>
+                </div>
+                <div class="fac_style">
+                    <input type="radio" name="facility_id" value="id3" id="id3" required>
+                    <label for="id3">Epsylon-9</label>
+                </div>
+                <div class="fac_style">
+                    <input type="radio" name="facility_id" value="id4" id="id4" required>
+                    <label for="id4">Aida-0-14</label>
+                </div>
+                <div class="fac_style">
+                    <input type="radio" name="facility_id" value="id5" id="id5" required>
+                    <label for="id5">Aida-1-14</label>
+                </div>
+                <div class="fac_style">
+                    <input type="radio" name="facility_id" value="id6" id="id6" required>
+                    <label for="id6">Beta-0</label>
+                </div>
+                <div class="fac_style">
+                    <input type="radio" name="facility_id" value="id7" id="id7" required>
+                    <label for="id7">Gimel-14</label>
+                </div>
+            </fieldset>
+            <div class="agree">
+                <input type="checkbox" name="agreement" id="agreement" value="true" required>
+                <label for="agreement">O5 access granted</label>
+            </div>
+            <button type="submit">Auth</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="container-centered">
+            Secure. Contain. Protect.
+        </div>
+    </footer>
+
+</body>
+
+</html>

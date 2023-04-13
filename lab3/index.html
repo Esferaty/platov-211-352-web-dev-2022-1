@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" media="print">
+    <title>SCP Foundation</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container d-flex direction-column">
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Main menu</a></li>
+                    <li><a href="auth.html">Authorization</a></li>
+                </ul>
+            </nav>
+            <div class="profile">
+                <a href="">Login</a>
+            </div>
+        </div>
+
+
+    </header>
+    <main class="container d-flex direction-column">
+        <aside class="sidebar">
+            <form>
+                <fieldset class="sidebar-section">
+                    <legend>Safety class</legend>
+                    <div>
+                        <input type="radio" name="group" value="group1" id="group1">
+                        <label for="group1">Safe</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="group" value="group2" id="group2">
+                        <label for="group2">Euclid</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="group" value="group3" id="group3">
+                        <label for="group3">Keter</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="group" value="group4" id="group4">
+                        <label for="group4">Thaumiel</label>
+                    </div>
+                </fieldset>
+                <button class="btn" type="submit">
+                    <span class="artic">Filter</span>
+                </button>
+            </form>
+
+        </aside>
+        <div class="page-content">
+            <h1 class="objects">Recent objects</h1>
+            <div class="objects-list">
+                <div class="event">
+                    <div class="object-image">
+                        <img src="Images/i1.png" alt="event1">
+                    </div>
+                    <div class="object-details">
+                        <header>SCP-1054-RU</header>
+                        <p>Class: Keter</p>
+                        <ul>
+                            <li>Aggressive</li>
+                            <li>Producer</li>
+                            <li>Radioactive threat</li>
+                            <li>Sound threat</li>
+                        </ul>
+                        <div class="object-image-rounded">
+                            <img src="Images/keter_sign.png" alt="">
+                        </div>
+                        <div class="control">
+                            <button class="btn">
+                                <span class="artic">Proceed to the article</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="object-image">
+                        <img src="Images/i2.png" alt="object2">
+                    </div>
+                    <div class="object-details">
+                        <header>SCP-914</header>
+                        <p>Class: Safe</p>
+                        <ul>
+                            <li>Passive</li>
+                            <li>Producer</li>
+                        </ul>
+                        <div class="object-image-rounded">
+                            <img src="Images/safe_sign.jpg" alt="">
+                        </div>
+                        <div class="control">
+                            <button class="btn">
+                                <span class="artic">Proceed to the article</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="object-image">
+                        <img src="Images/i3.png" alt="event1">
+                    </div>
+                    <div class="object-details">
+                        <header>SCP-1013-RU</header>
+                        <ul>
+                            <li>Passive</li>
+                            <li>Producer</li>
+                            <li>Gravity threat</li>
+                            <li>Random threat</li>
+                        </ul>
+                        <div class="object-image-rounded">
+                            <img src="Images/euclid_sign.jpg" alt="">
+                        </div>
+                        <div class="control">
+                            <button class="btn">
+                                <span class="artic">Proceed to the article</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="object-image">
+                        <img src="Images/i4.jpg" alt="object2">
+                    </div>
+                    <div class="object-details">
+                        <header>SCP-1274-RU</header>
+                        <p>Class: Thaumiel</p>
+                        <ul>
+                            <li>Passive</li>
+                            <li>Time threat</li>
+                            <li>Metamorphosis</li>
+                        </ul>
+                        <div class="object-image-rounded">
+                            <img src="Images/thaumiel_sign.jpg" alt="">
+                        </div>
+                        <div class="control">
+                            <button class="btn">
+                                <span class="artic">Proceed to the article</span>
+                            </button>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container-centered">
+            <p>Secure. Contain. Protect.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

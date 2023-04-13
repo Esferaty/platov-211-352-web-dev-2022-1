@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Основы веб-технологий</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="static/product.css">
+</head>
+
+<body>
+    <main>
+        <div class="bg-lightgray">
+            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light project-bg">
+                <div class="col-md-6 p-lg-6 mx-auto my-6">
+                    <h1 class="display-4 fw-normal">О проекте</h1>
+                    <p class="lead fw-normal">
+                        В рамках нашего инновационного проекта мы хотели рассмотреть работу устройства, которое нам
+                        презентовал наш знакомый. Кодовое название - "Шкатулка Бога".
+                    </p>
+                </div>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-md-flex flex-md-equal w-100">
+                            <div class="text-bg-dark pb-3 pt-1 px-3 pt-md-1 px-md-3 text-center overflow-hidden">
+                                <div class="my-3 mb-0">
+                                    <h2 class="display-5">Шкатулка?</h2>
+                                    <p class="lead px-5">Этот странный часовой механизм кажется обыкновенным, но это
+                                        лишь на первый взгляд. Большой набор шестерен движется, соблюдая какую-то
+                                        запутанную последовательность.</p>
+                                    <img class="rounded img-fluid w-50 h-50" src="static/img/bg_clockwork.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-md-flex flex-md-equal w-100">
+                            <div class="text-bg-dark pb-3 pt-1 px-3 pt-md-1 px-md-3 text-center overflow-hidden">
+                                <div class="my-3 mb-0">
+                                    <h2 class="display-5">Ближе к делу</h2>
+                                    <p class="lead px-5">Мы считаем, что механизм играет своеобразную "мелодию". Она
+                                        состоит из щелчков, разделенных длинными интервалами тишины. Периодичность
+                                        "молчания" не постоянна.</p>
+                                    <img class="rounded img-fluid w-50 h-50" src="static/img/bg_clockwork1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-md-flex flex-md-equal w-100">
+                            <div class="text-bg-dark pb-3 pt-1 px-3 pt-md-1 px-md-3 text-center overflow-hidden">
+                                <div class="my-3 mb-0">
+                                    <h2 class="display-5">Мелодия?</h2>
+                                    <p class="lead px-5">Паттерны щелчков повторяются, но общая структура нам всё ещё не
+                                        ясна. Занимательно, что каждый, кто был рядом с механизмом, говорил, что уже
+                                        где-то слышал эту мелодию.</p>
+                                    <img class="rounded img-fluid w-50 h-50" src="static/img/bg_clockwork2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="hr p-4"></div>
+            <div class="container text-center p-3">
+                <div class="display-5 m-3 text-center text">
+                    Что дальше?
+                </div>
+                <div class="lead p-4">
+                    Наиболее эффективным подходом к изучению "Шкатулки" будет статистический.
+                    Если вы хотите поучаствовать в судьбе механизма и разгадать тайну, скрытую среди тысячи шестисот
+                    восемнадцати шестерен, - добро пожаловать в команду!
+                    Чуть ниже вы можете оставить свои контактные данные, чтобы мы могли с вами связаться.
+                </div>
+                <hr>
+                <div class="lead p-4">
+                    После регистрации на проекте вам будет выдана личная ссылка на трансляцию "Шкатулки" в прямом эфире.
+                    Ведите записи, обсуждайте полученные результаты с коллегами и, может когда-нибудь, мы с вами найдём
+                    все ответы.
+                </div>
+            </div>
+            <div class="hr p-4"></div>
+        </div>
+    </main>
+    <footer class="py-5 px-5 footer">
+        <div class="row text-center">
+            <div class="col-md-6 col-xs-12 pb-3">
+                <img class="img-fluid rounded-circle" src="static/img/footer-img.png" alt="">
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Это останется между нами</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInput" class="form-label">Фамилия и имя</label>
+                        <input type="text" class="form-control" id="exampleInput">
+                        <div id="textHelp" class="form-text">Чтобы мы знали, как к тебе обращаться</div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Присылать новости о проекте</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-dark">Принять участие</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

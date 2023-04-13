@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="static/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аутентификация</title>
+</head>
+
+<body>
+    <header class="header-main">
+        <div class="container d-flex direction-column">
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Форма обратной связи</a></li>
+                    <li><a href="auth.html">Форма аутентификации</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-centered">
+        <div class="container-centered">
+            <h2>Пожалуйста, войдите:</h2>
+            <form method="POST" action="http://httpbin.org/post" enctype="multipart/form-data">
+                <div>
+                    <label for="login">Логин</label>
+                    <input type="text" name="login" id="login" placeholder="Your login" required>
+                </div>
+                <div>
+                    <label for="pswd">Пароль</label>
+                    <input type="password" name="pswd" id="pswd" placeholder="Secure password" required>
+                </div>
+                <div>
+                    <label for="remember-me">Запомнить меня</label>
+                    <input type="checkbox" name="remember-me" id="remember-me" value="true">
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            &copy; Ivan P.
+        </div>
+    </footer>
+</body>
+
+</html>

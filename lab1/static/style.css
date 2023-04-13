@@ -1,0 +1,114 @@
+.header-main {
+	background-color: black;
+	color: white;
+	padding: 20px 0;
+	font-size: 1rem;
+	height: 17rem;
+}
+* {
+	font-family: "Courier";
+}
+html {
+	height: 100%;
+}
+html::after
+{
+	content: ' ';
+  	display: block;
+  	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	opacity: 0.10;
+	background-image: url("/images/SSO_onWhite.png");
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	background-size: cover;
+}
+body {
+	margin: 0;
+	min-height: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr
+}
+p {
+	text-align: justify;
+	width: 30%;
+}
+.p-head {
+	width: 100%;
+	text-align: justify;
+	text-align: center;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 1.25rem;
+}
+.menu-main ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-top: 15px;
+}
+.menu-main li {
+	display: inline-block;
+	margin-right: 10px;
+}
+.menu-main li:last-child {
+	margin-right: 0;
+}
+.menu-main a {
+	color: white;
+	text-decoration: none;
+}
+.container {
+	max-width: 90%;
+	margin: 0 auto;
+}
+.container-before-footer
+{
+	margin-bottom: 11em;
+}
+.footer {
+	margin-top: auto;
+	background-color: black;
+	color: white;
+	padding: 20px 0;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	border: 1px solid white;
+	font-weight: bold;
+	padding: 10px;
+}
+.avatar {
+	text-align: center;
+	height: 30em;
+	margin: 0 auto;
+}
+main {
+	max-height: 90%;
+	padding: 1rem 0 0 1rem;
+}
+.avatar img {
+	height: 100%;
+}
+table {
+	border-collapse: collapse;
+}
+th, td {
+	border: 1px solid black;
+	text-align: center;
+	padding: 5px;
+}
+h1, h2, .p-head
+{
+	margin: 15px;
+}
